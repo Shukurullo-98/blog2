@@ -1,2 +1,2 @@
-heroku ps:scale --app siteblog web=0
+web: gunicorn siteblog.wsgi --log-file -
 
