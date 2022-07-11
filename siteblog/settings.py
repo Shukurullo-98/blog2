@@ -13,7 +13,9 @@ SECRET_KEY = 'django-insecure-0$*u6fo*kk7$bb361b985pp8*#&8-eag@(yl-5ygxf)k4%#+vy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+MIDDLEWARE_CLASSES = 'whitenoise.middleware.WhiteNoiseMiddleware'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Application definition
