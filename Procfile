@@ -1,1 +1,2 @@
-web: gunicorn siteblog:app
+heroku ps:scale --app siteblog web=0
+
