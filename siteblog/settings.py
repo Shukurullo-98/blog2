@@ -121,7 +121,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 MEDIA_URL = '/media/'
-
+ADMIN_MEDIA_PREFIX = '/staticfiles/admin/'
 INTERNAL_IPS = [
     '127.0.0.1',
 ]
